@@ -3,7 +3,11 @@ function Home() {
     return (
         <div>
            <main>
-                <h2> Hello World! </h2>
+                <div className="topnav">
+                    <a className='active' href="/">Home</a>
+                    <a href="/jewelery">Jewelry</a>
+                    <a href="/edu">Education</a>
+                </div>
             </main> 
         </div>
     )
