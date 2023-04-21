@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0c56e;
+    padding: 10px 20px;
+}
+
+/*Set width: 100% for navbar-item-right!*/
+.navbar-menu {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Spacing */
+.navbar-item {
+    margin-left: 1em;
+}
+
+/*Login & Signup*/
+.navbar-item-right {
+    margin-left: auto;
+    text-decoration: none;
+}
+
+/*No underlines*/
+.navbar-link {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-link:hover {
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+}
