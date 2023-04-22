@@ -1,18 +1,9 @@
 
-function Home() {
 
+function Home() {
     return (
-        <div>
-            <main>
-                <div className="topnav">
-                    <a href="/">Home</a>
-                    <a href="/jewelry">Jewelry</a>
-                    <a href="/edu">Education</a>
-                    <a href="/abt">About Us</a>
-                </div>
-            </main>
-        </div>
-    )
+    <h1>This Will Be The Home Page</h1>
+        )
 }
 
 export default Home

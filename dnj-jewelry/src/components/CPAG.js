@@ -1,2 +1,0 @@
-// Custom Piece Art Gallery 
-
