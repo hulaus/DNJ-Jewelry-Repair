@@ -63,4 +63,4 @@ def success():
 # Checks if running local
 if __name__ == "__main__":
     # Statrs the Flask development server on the local machine
-    app.run(debug=True, port=5001)
+    app.run()
