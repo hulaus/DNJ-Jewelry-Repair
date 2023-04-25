@@ -50,6 +50,19 @@
   color: whitesmoke;
 }
 
+.banner{
+  text-align: center;
+  width: 50%;
+}
+
+.rightPicture{
+  width:50%;
+}
+
+.leftPicture{
+  width: 50%;
+}
+
 
 
 

@@ -1,6 +1,9 @@
 import React from "react"
 import Card from 'react-bootstrap/Card'
 import customJewelry from "./assets/images/customJewelry.jpg"
+import Bracelet from "./assets/images/Bracelet.png"
+import PinUpClose from "./assets/images/PinUpClose.png"
+import DangleEarrings from "./assets/images/DangleEarrings.png"
 
 // once the picture is in I'm thinking of changing the intro card into just a regular
 // paragraph so that it will span across the whole page and then the picture cards
@@ -10,10 +13,10 @@ import customJewelry from "./assets/images/customJewelry.jpg"
 function customCards() {
     return(
         <>
-            <img src={customJewelry} alt="DNJ Custom Jewelry" />
+            <img className="banner" src={customJewelry} alt="DNJ Custom Jewelry" />
                 <div className="container">
                     <Card className="intro" style={{ width: '18rem'}}>
-                        <Card.Img variant='top' src='holder.js/100px180? text=Image cap' />
+                        <Card.Img className="rightPicture" variant='top' src={Bracelet}/>
                         <Card.Body>
                             <Card.Title className="introCard"> Customly Created, Expertly Crafted </Card.Title>
                                 <Card.Text>
@@ -24,9 +27,9 @@ function customCards() {
                                 </Card.Text>
                         </Card.Body>
                     </Card>
-                    <br></br>
+                    <br />
                     <Card className="CustPic">
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img className="leftPicture" variant="top" src={DangleEarrings} />
                         <Card.Body>
                             <Card.Text>
                                 Text explaining the jewelery
@@ -35,7 +38,7 @@ function customCards() {
                     </Card>
                     <br></br>
                     <Card className="CustPic">
-                        <Card.Img variant="top" src="holder.js/100x180" />
+                        <Card.Img className="rightPicture" variant="top" src={PinUpClose} />
                         <Card.Body>
                             <Card.Text>
                                 Text explaining the jewelery
