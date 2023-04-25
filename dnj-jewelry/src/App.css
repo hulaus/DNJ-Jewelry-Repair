@@ -1,10 +1,39 @@
-.App {
-  text-align: center;
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .topnav {
   background-color:blanchedalmond;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  font-weight: 600;
+  
+}
+
+.logo {
+  height: 50px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro {
+  width: 320px;
+  padding: 20px;
+  border: 1px solid burlywood;
+}
+.introCard {
+  padding: 10px;
+}
+
+.CustPic {
+  width: 320px;
+  padding: 20px;
+  border: 1 px solid burlywood;
 }
 
 .topnav a {
@@ -20,3 +49,16 @@
   background-color: burlywood;
   color: whitesmoke;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Sizing Conventions */
+
