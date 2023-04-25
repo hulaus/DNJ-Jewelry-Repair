@@ -10,30 +10,10 @@
   justify-content: space-around;
   padding: 10px;
   font-weight: 600;
-  
 }
 
 .logo {
   height: 50px;
-}
-.container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.intro {
-  width: 320px;
-  padding: 20px;
-  border: 1px solid burlywood;
-}
-.introCard {
-  padding: 10px;
-}
-
-.CustPic {
-  width: 320px;
-  padding: 20px;
-  border: 1 px solid burlywood;
 }
 
 .topnav a {
@@ -50,13 +30,24 @@
   color: whitesmoke;
 }
 
-.banner{
-  text-align: center;
-  width: 50%;
+/*
+
+.imageLeft{
+  margin: 75px;
 }
 
+.textRight{
+  padding-left: 2rem;
+  text-align: right;
+}
+
+
 .rightPicture{
-  width:50%;
+  width:400px;
+  height: 180px;
+  margin-left: 180px;
+  overflow: hidden;
+  text-align: left;
 }
 
 .leftPicture{
@@ -64,14 +55,39 @@
 }
 
 
+.secondCard {
+  width: 320px;
+  padding: 20px;
+  border: 1 px solid burlywood;
+}
 
+*/
 
+.banner{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 2rem;
+}
 
+.Card {
+display: flex;
+flex: 0 0 25%;
+}
 
+.leftPicture {
+  width: 320px;
+  padding: 20px;
+  border: 1px solid burlywood;
+  display:inline-table;
+}
 
-
-
-
+.rightPicture{
+  width: 320px;
+  padding: 20px;
+  border: 1px solid burlywood;
+  display:inline-table;
+}
 
 /* Sizing Conventions */
 

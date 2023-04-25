@@ -15,11 +15,11 @@ function customCards() {
         <>
             <img className="banner" src={customJewelry} alt="DNJ Custom Jewelry" />
                 <div className="container">
-                    <Card className="intro" style={{ width: '18rem'}}>
-                        <Card.Img className="rightPicture" variant='top' src={Bracelet}/>
+                    <Card className="Card" >
+                        <Card.Img className="rightPicture"  src={Bracelet}/>
                         <Card.Body>
                             <Card.Title className="introCard"> Customly Created, Expertly Crafted </Card.Title>
-                                <Card.Text>
+                                <Card.Text className="textRight">
                                     At DnJ Jewelry, we believe everyone should have the right to confidently display
                                     a piece of jewelry that means something to them. Whether it's one of a kind wedding
                                     bands or just another piece for your collection, DnJ has the tools and the expertise
@@ -28,8 +28,8 @@ function customCards() {
                         </Card.Body>
                     </Card>
                     <br />
-                    <Card className="CustPic">
-                        <Card.Img className="leftPicture" variant="top" src={DangleEarrings} />
+                    <Card className="Card">
+                        <Card.Img className="leftPicture"  src={DangleEarrings} />
                         <Card.Body>
                             <Card.Text>
                                 Text explaining the jewelery
@@ -37,8 +37,8 @@ function customCards() {
                         </Card.Body>
                     </Card>
                     <br></br>
-                    <Card className="CustPic">
-                        <Card.Img className="rightPicture" variant="top" src={PinUpClose} />
+                    <Card className="Card">
+                        <Card.Img className="rightPicture" src={PinUpClose} />
                         <Card.Body>
                             <Card.Text>
                                 Text explaining the jewelery
