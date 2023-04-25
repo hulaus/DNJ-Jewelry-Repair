@@ -64,6 +64,8 @@ def success():
 
 # Checks if running local
 if __name__ == "__main__":
+    
+    # Checks if both are set to a value or not
     if supabase_url is None or supabase_key is None:
       raise ValueError("SUPABASE_URL and/or SUPABASE_KEY environment variables are not set")
 
