@@ -1,9 +1,11 @@
-# Imports Flask and Supabase
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import supabase
 # Python "os" module
 import os
+
+# Load environment variables from .env 
+load_dotenv()
 
 # Retrieve the values env variables using the "os" module
 supabase_url = os.environ.get("SUPABASE_URL")
@@ -18,7 +20,7 @@ app = Flask(__name__)
 # home and aboutus routes return: "message is for testing purposes!"
 @app.route("/")
 def home():
-    return jsonify({"message": "Welcome to the home page!"})
+    return jsonify({"message": "Home page!"})
 
 @app.route("/aboutus")
 def aboutus():
@@ -27,7 +29,7 @@ def aboutus():
 # Login route validation
 @app.route("/login", methods=["POST"])
 def login():
-    data - request.get_json()
+    data = request.get_json()
     email = data.get("email")
     password = data.get("password")
 
@@ -38,10 +40,10 @@ def login():
     if error is not None:
         return({"error": error.message}), 400
     else: 
-        return jsonity({"message": "Created successfully"})
+        return jsonify({"message": "Created successfully"}), 200
 
 # Sing up route with validation
-@app.route("/signup", method=["POST"])
+@app.route("/signup", methods=["POST"])
 def sign():
     data = request.get_json()
     email = data.get("email")
@@ -62,5 +64,7 @@ def success():
 
 # Checks if running local
 if __name__ == "__main__":
-    # Statrs the Flask development server on the local machine
-    app.run()
+    if supabase_url is None or supabase_key is None:
+      raise ValueError("SUPABASE_URL and/or SUPABASE_KEY environment variables are not set")
+
+app.run()
