@@ -1,5 +1,6 @@
 import React from "react"
 import Card from 'react-bootstrap/Card'
+import customJewelry from "./assets/images/customJewelry.jpg"
 
 // once the picture is in I'm thinking of changing the intro card into just a regular
 // paragraph so that it will span across the whole page and then the picture cards
@@ -9,7 +10,7 @@ import Card from 'react-bootstrap/Card'
 function customCards() {
     return(
         <>
-            <img src="./public/images/custom_Jewelry.jpg" alt="DNJ Custom Jewelry"></img>
+            <img src={customJewelry} alt="DNJ Custom Jewelry" />
                 <div className="container">
                     <Card className="intro" style={{ width: '18rem'}}>
                         <Card.Img variant='top' src='holder.js/100px180? text=Image cap' />
@@ -41,9 +42,11 @@ function customCards() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                   
                 </div>
-        </>) 
-        }
+        </>
+        ) 
+    }
             
 
 
