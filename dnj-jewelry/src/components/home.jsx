@@ -1,8 +1,14 @@
+import React from "react"
+ // import Jeweler from "./assets/images/Jeweler.png"
 
 
 function Home() {
     return (
-    <h1>This Will Be The Home Page</h1>
+    <>
+    <div className="homePageHeader">
+    <h1>DNJ Jewelry Repair</h1>
+    </div>
+    </>
         )
 }
 

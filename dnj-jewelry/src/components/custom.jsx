@@ -1,9 +1,9 @@
 import React from "react"
 import Card from 'react-bootstrap/Card'
 import customJewelry from "./assets/images/customJewelry.jpg"
-import Bracelet from "./assets/images/Bracelet.png"
-import PinUpClose from "./assets/images/PinUpClose.png"
-import DangleEarrings from "./assets/images/DangleEarrings.png"
+import Bracelet from "./assets/images/bracelet.png"
+import PinUpClose from "./assets/images/pinUpClose.png"
+import DangleEarrings from "./assets/images/dangleEarrings.png"
 import Customform from "./customForm"
 
 // once the picture is in I'm thinking of changing the intro card into just a regular
