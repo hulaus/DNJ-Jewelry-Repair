@@ -11,8 +11,6 @@ function Home() {
 
     return (
         <div>
-          < Register />
-          < Login />
           {
             (currentForm === 'login' ? <Login onFormSwitch={toggleForm} /> : 
             <Register onFormSwitch={toggleForm} />)
