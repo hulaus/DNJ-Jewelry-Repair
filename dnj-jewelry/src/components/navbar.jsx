@@ -1,4 +1,4 @@
-import Dnj from "./assets/images/Dnj.png"
+import Dnj from "./assets/images/dnj.png"
 
 function Navbar() {
 
