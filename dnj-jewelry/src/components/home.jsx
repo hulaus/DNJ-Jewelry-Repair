@@ -1,9 +1,20 @@
-
+import { useState } from "react"
 
 function Home() {
+  const [currentForm, setCurrentForm] = useState('login')
+    
+  const toggleForm = (formName) => {
+        setCurrentForm(formName)
+    }
+
     return (
-    <h1>This Will Be The Home Page</h1>
-        )
+        <div>
+          {
+            (currentForm === 'login' ? <Login onFormSwitch={toggleForm} /> : 
+            <Register onFormSwitch={toggleForm} />)
+          }
+        </div>
+    )
 }
 
 export default Home
