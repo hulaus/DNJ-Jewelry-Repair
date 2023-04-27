@@ -6,9 +6,6 @@ function Customform() {
     const [jewelryType, setJewelryType ] = useState(options[0])
     const [ inquiry, setInquiry ] = useState("")
 
-    const handleChange = e => {
-        setJewelryType(e.target.value)
-    }
     const handleInquiry = e => {
         setInquiry(e.target.value)
     }
@@ -28,7 +25,7 @@ function Customform() {
         Our team will swiftly provide you with detailed pricing and information. 
         At DnJ Jewelry, we are dedicated to delivering unparalleled quality in materials, design, and craftsmanship. 
         Our skilled artisans use only authentic materials and natural precious stones to create one-of-a-kind works of art that are truly unique and valuable.
-        <strong>Please note that we do not offer custom work in non-precious metals such as stainless steel, brass, or copper, nor do we work with lab-made, synthetic, or man-made diamonds. </strong>
+        <strong> Please note that we do not offer custom work in non-precious metals such as stainless steel, brass, or copper, nor do we work with lab-made, synthetic, or man-made diamonds. </strong>
         </p>
         <hr />
         <form onSubmit={handleSumbit}>
