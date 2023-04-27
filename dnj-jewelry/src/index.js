@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Client from 'shopify-buy';
 
 const client = Client.buildClient({ storefrontAccessToken: 'your-access-token', domain: 'your-shopify-url.myshopify.com' });
 
