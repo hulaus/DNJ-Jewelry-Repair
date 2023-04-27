@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react"
 
 export const Login = (props) => {
 
+    const [userEmail, setUserEmail ] = useState("")
+    const [userPassword, setUserPassword ] = useState("")
+    
     async function handleSubmit(e) {
         e.preventDefault()
         console.log(email)
