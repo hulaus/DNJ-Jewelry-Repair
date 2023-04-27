@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
+const client = Client.buildClient({ storefrontAccessToken: 'your-access-token', domain: 'your-shopify-url.myshopify.com' });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
