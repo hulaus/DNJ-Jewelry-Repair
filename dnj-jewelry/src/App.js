@@ -7,6 +7,7 @@ import Aboutus from './components/aboutUs';
 import Custom from './components/custom';
 import Navbar from './components/navbar';
 
+
 function App() {
   return (
     <div className="App">
@@ -20,9 +21,16 @@ function App() {
       <Route path="Custom" element={<Custom />} />
     </Routes>
    </BrowserRouter>
+    
+    
+    
     </div>
 
   );
+
+  
 }
+
+
 
 export default App;
