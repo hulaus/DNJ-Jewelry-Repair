@@ -1,4 +1,4 @@
-import React from "react"
+import React  from "react"
 import Card from 'react-bootstrap/Card'
 import customJewelry from "./assets/images/customJewelry.jpg"
 import Bracelet from "./assets/images/bracelet.png"

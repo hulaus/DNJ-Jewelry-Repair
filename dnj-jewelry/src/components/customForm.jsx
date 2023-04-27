@@ -1,6 +1,18 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 
 function Customform() {
+    const [jewelryType, setJewelryType ] = useState()
+    const [ inquiry, setInquiry ] = useState("")
+
+    const handleChange = e => {
+        setJewelryType(e.target.value)
+    }
+
+    const handleSumbit = e => {
+        e.preventDefault();
+        console.log(inquiry)
+    }
+
     return(
         <>
         <h1>Custom Jewelry Inquiry Form</h1>
@@ -33,7 +45,7 @@ function Customform() {
             </label>
             <label>
                 Custom Jewelry Type:
-                <select name="jewelryType" defaultValue="ring">
+                <select name="jewelryType" id="jewelryType" value={jewelryType} defaultValue="ring" onChange={handleChange}>
                     <option value="pendant">Pendant</option>
                     <option value="necklace">Necklace</option>
                     <option value="ring">Ring</option>
@@ -43,8 +55,9 @@ function Customform() {
             </label>
             <label>
                 Inquiry
-                <textarea name="Inquiry" rows={4} cols={40} />
+                <textarea name="inquiry" id= "inquiry" value={ inquiry} rows={4} cols={40} />
             </label>
+            <button name="customInquiry" type="submit" onClick={handleSumbit}> Submit </button>
         </form>
         </>
     )
