@@ -3,6 +3,9 @@ import {React, useState, useEffect} from "react";
 const options = ["Pendant", "Necklace", "Ring", "Bracelet", "Earrings"]
 
 function Customform() {
+    const [ name, setName ] = useState("")
+    const [ contact, setContact ] = useState("")
+    const [ email, setEmail ] = useState("")
     const [jewelryType, setJewelryType ] = useState(options[0])
     const [ inquiry, setInquiry ] = useState("")
 
@@ -30,20 +33,16 @@ function Customform() {
         <hr />
         <form onSubmit={handleSumbit}>
             <label>
-                First Name:
-                <input type="string" name="First Name" />
-            </label>
-            <label>
-                Last Name:
-                <input type="string" name="Last Name" />
+                Full Name:
+                <input type="string" name="First Name" id="name" value={name} onChange={ e => setName(e.target.value)} />
             </label>
             <label>
                 Phone Number:
-                <input type="string" name="Phone Number" />
+                <input type="string" name="Phone Number" id="contactNumber" value={contact} onChange={ e => setContact(e.target.value)} />
             </label>
             <label>
                 Email Address
-                <input type="string" name="Email Address" />
+                <input type="string" name="Email Address" id="email" value={email} onChange={ e => setEmail(e.target.value)} />
             </label>
             <label>
                 Custom Jewelry Type:
