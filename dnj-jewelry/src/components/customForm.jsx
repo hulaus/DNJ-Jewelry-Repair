@@ -6,6 +6,7 @@ function Customform() {
 
     const handleChange = e => {
         setJewelryType(e.target.value)
+        setInquiry(e.target.value)
     }
 
     const handleSumbit = e => {
@@ -26,7 +27,7 @@ function Customform() {
         <strong>Please note that we do not offer custom work in non-precious metals such as stainless steel, brass, or copper, nor do we work with lab-made, synthetic, or man-made diamonds. </strong>
         </p>
         <hr />
-        <form>
+        <form onSubmit={handleSumbit}>
             <label>
                 First Name:
                 <input type="string" name="First Name" />
@@ -57,7 +58,7 @@ function Customform() {
                 Inquiry
                 <textarea name="inquiry" id= "inquiry" value={ inquiry} rows={4} cols={40} />
             </label>
-            <button name="customInquiry" type="submit" onClick={handleSumbit}> Submit </button>
+            <input name="customInquiry" type="submit"> Submit </input>
         </form>
         </>
     )
