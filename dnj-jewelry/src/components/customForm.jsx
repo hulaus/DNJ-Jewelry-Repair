@@ -1,11 +1,15 @@
 import {React, useState, useEffect} from "react";
 
+const options = ["Pendant", "Necklace", "Ring", "Bracelet", "Earrings"]
+
 function Customform() {
-    const [jewelryType, setJewelryType ] = useState()
+    const [jewelryType, setJewelryType ] = useState(options[0])
     const [ inquiry, setInquiry ] = useState("")
 
     const handleChange = e => {
         setJewelryType(e.target.value)
+    }
+    const handleInquiry = e => {
         setInquiry(e.target.value)
     }
 
@@ -46,19 +50,19 @@ function Customform() {
             </label>
             <label>
                 Custom Jewelry Type:
-                <select name="jewelryType" id="jewelryType" value={jewelryType} defaultValue="ring" onChange={handleChange}>
-                    <option value="pendant">Pendant</option>
-                    <option value="necklace">Necklace</option>
-                    <option value="ring">Ring</option>
-                    <option value="bracelet">Bracelet</option>
-                    <option value="earrings">Earrings</option>
+                <select value={jewelryType} onChange={ e => setJewelryType(e.target.value)}>
+                    {options.map((value) => (
+                        <option value={value} key={value}>
+                            {value}
+                        </option>
+                    ))}
                 </select>
             </label>
             <label>
                 Inquiry
-                <textarea name="inquiry" id= "inquiry" value={ inquiry} rows={4} cols={40} />
+                <textarea name="inquiry" id= "inquiry" value={inquiry} rows={4} cols={40} onChange={handleInquiry}/>
             </label>
-            <input name="customInquiry" type="submit"> Submit </input>
+            <button name="customInquiry" type="submit"> Submit </button>
         </form>
         </>
     )
