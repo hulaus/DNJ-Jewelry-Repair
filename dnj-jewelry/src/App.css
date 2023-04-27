@@ -1,10 +1,19 @@
-.App {
-  text-align: center;
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+/* This section is for the Navbar component */
 .topnav {
   background-color:blanchedalmond;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.logo {
+  height: 50px;
 }
 
 .topnav a {
@@ -21,71 +30,83 @@
   color: whitesmoke;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+/* Will probably be using this code later (under)*/
+/*
+
+.imageLeft{
+  margin: 75px;
 }
 
-html {
+.textRight{
+  padding-left: 2rem;
+  text-align: right;
+}
+
+
+.rightPicture{
+  width:400px;
+  height: 180px;
+  margin-left: 180px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.leftPicture{
+  width: 50%;
+}
+
+
+.secondCard {
+  width: 320px;
+  padding: 20px;
+  border: 1 px solid burlywood;
+}
+
+*/
+/* This section is for the Custom pieces page*/
+.banner{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 2rem;
+}
+
+.Card {
+display: flex;
+flex: 0 0 25%;
+}
+
+.leftPicture {
+  width: 320px;
+  padding: 20px;
+  border: 1px solid burlywood;
+  display:inline-table;
+}
+
+.rightPicture{
+  width: 320px;
+  padding: 20px;
+  border: 1px solid burlywood;
+  display:inline-table;
+}
+
+/* This section is for the form in the Custom Pieces File*/
+.formCustom{
+  min-width: 100%;
+  height: 50rem;
+  border: dotted black;
   box-sizing: border-box;
+  margin: 0;
+  padding: 5rem;
+  position: relative;
+  /* border: 1px solid red; */
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
+.formCustom label {
+  display: block;
   text-align: center;
-  background-color: #474e5d;
-  color: white;
+  font-size: 20px;
+  margin: 0 0 2vh 0
 }
+/* Sizing Conventions */
 
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
