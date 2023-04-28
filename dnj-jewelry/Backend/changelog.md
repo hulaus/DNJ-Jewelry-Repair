@@ -1,3 +1,5 @@
+# Installs
+
 *python -m venv venv*
 
 *pip install supabase*
@@ -14,3 +16,15 @@
 
 *pip install email-validator*
 
+*pip install flask-bcrypt*
+
+*pip freeze > requirements.txt*
+*pip install -r requirements.txt / install req*
+
+*pip install bcrypt*
+
+## Debug 
+
+*app run(debug=True)*
+
+*flask run --debug*
