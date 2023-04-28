@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from supabase_py import create_client # ADDED
 import httpx
 from dotenv import load_dotenv
 import os
@@ -6,7 +7,7 @@ import os
 # Load environment variables
 load_dotenv()
 
-# Flask application
+# Flask application - MOVED TO TOP
 app = Flask(__name__)
 
 # Supabase API URLs
@@ -18,6 +19,7 @@ SUPABASE_HEADERS = {
     "content-type": "application/json",
 }
 
+supsbase = create_client(SUPABASE_URL, SUPABASE_API_KEY) # ADDED
 
 # Routes
 @app.route('/')
