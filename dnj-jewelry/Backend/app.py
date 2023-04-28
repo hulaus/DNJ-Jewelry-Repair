@@ -6,6 +6,9 @@ import os
 # Load environment variables
 load_dotenv()
 
+# Flask application
+app = Flask(__name__)
+
 # Supabase API URLs
 SUPABASE_URL = os.environ['SUPABASE_URL']
 SUPABASE_API_KEY = os.environ['SUPABASE_API_KEY']
@@ -15,8 +18,6 @@ SUPABASE_HEADERS = {
     "content-type": "application/json",
 }
 
-# Flask application
-app = Flask(__name__)
 
 # Routes
 @app.route('/')
