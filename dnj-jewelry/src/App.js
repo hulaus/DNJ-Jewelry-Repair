@@ -8,6 +8,9 @@ import Custom from './components/custom';
 import Navbar from './components/navbar';
 
 function App() {
+
+  const baseUrl = 'http://localhost:3000'
+  
   return (
     <div className="App">
    <Navbar />
