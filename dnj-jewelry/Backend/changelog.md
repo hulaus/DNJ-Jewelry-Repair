@@ -18,6 +18,8 @@
 
 *pip install flask-bcrypt*
 
+<!-- *pip install sqlalchemy* -->
+
 *pip freeze > requirements.txt*
 *pip install -r requirements.txt / install req*
 
