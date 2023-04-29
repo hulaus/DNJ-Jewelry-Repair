@@ -31,20 +31,12 @@
 }
 
 /* This section is for the About us Page */
-.homePageHeader{
-  text-align: center;
-  display: block;
-}
 
   .picture-inside-container{
-    text-align: center;
     display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    height: 20%;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 2rem;
   }
   
 
