@@ -12,11 +12,9 @@ def jewelry():
     data={"message": "Jewelry endpoint"}
     return jsonify(data)
 
-@my_routes.route('/forum')
-def forum():
-    data={"message": "Forum endpoint"}
-    return jsonify(data)
-
+#@my_routes.route('/forum')
+#def forum():
+    
 @my_routes.route('/aboutus')   
 def aboutus():
     data ={"message": "About us endpoint"}

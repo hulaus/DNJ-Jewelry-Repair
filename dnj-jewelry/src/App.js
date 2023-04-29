@@ -7,7 +7,12 @@ import Aboutus from './components/aboutUs';
 import Custom from './components/custom';
 import Navbar from './components/navbar';
 
+
+export const baseUrl = 'http:localhost:5000'
+
 function App() {
+ 
+
   return (
     <div className="App">
    <Navbar />

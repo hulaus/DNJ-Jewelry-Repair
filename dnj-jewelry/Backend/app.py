@@ -8,6 +8,7 @@ from supabase_py import create_client
 import bcrypt
 from api.routes import my_routes
 # from api.routes import models
+from flask_cors import CORS
 
 
 # Load environment variables
@@ -15,6 +16,7 @@ load_dotenv()
 
 # Flask application
 app = Flask(__name__)
+CORS(app)
 
 # Routes from routes.py
 app.register_blueprint(my_routes)
