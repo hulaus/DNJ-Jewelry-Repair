@@ -1,77 +1,54 @@
-from flask import Flask, jsonify, request
-from supabase_py import create_client # ADDED
-import httpx
+# Flask application logic and routes + (the routes in routes.py)
 from dotenv import load_dotenv
 import os
+from email_validator import validate_email, EmailNotValidError
+from flask import Flask, jsonify, request
+# from flask_sqlalchemy import SQLAlchemy
+from supabase_py import create_client
+import bcrypt
+from api.routes import my_routes
+# from api.routes import models
+
 
 # Load environment variables
 load_dotenv()
 
-# Flask application - MOVED TO TOP
+# Flask application
 app = Flask(__name__)
 
-# Supabase API URLs
-SUPABASE_URL = os.environ['SUPABASE_URL']
-SUPABASE_API_KEY = os.environ['SUPABASE_API_KEY']
-SUPABASE_HEADERS = {
-    "apikey": os.environ['SUPABASE_ANON_KEY'],
-    "authorization": f"Bearer {os.environ['SUPABASE_ANON_KEY']}",
-    "content-type": "application/json",
-}
+# Routes from routes.py
+app.register_blueprint(my_routes)
 
-supsbase = create_client(SUPABASE_URL, SUPABASE_API_KEY) # ADDED
+# Supabase client | Secret_key adds security
+supabase_url = os.environ['SUPABASE_URL']
+supabase_key = os.environ['SUPABASE_API_KEY']
+supabase_secret_key = os.environ['SUPABASE_SECRET_KEY']
+supabase = create_client(supabase_url, supabase_key)
 
-# Routes
-@app.route('/')
-def home():
-    return jsonify(message="Welcome to the home page!")
-
-
-@app.route('/jewelry')
-def jewelry():
-    return jsonify(message="This is the jewelry page!")
-
-
-@app.route('/aboutus')
-def aboutus():
-    return jsonify(message="This is the aboutus page!")
-
-
-@app.route('/custom')
-def custom():
-    return jsonify(message="This is the custom page!")
-
-
-# Need data sanitization
+# Signup route | Working in progress
 @app.route('/signup', methods=['POST'])
 def signup():
-    email = request.json.get('email')
-    password = request.json.get('password')
+    email = request.form.get('email')
+    password = request.form.get('password')
 
-    data = {"email": email, "password": password}
-    response = httpx.post(f"{SUPABASE_URL}/auth/v1/signup",
-                          json=data, headers=SUPABASE_HEADERS)
+    # Validate email address
+    try:
+        validate_email(email)
+    except EmailNotValidError:
+        return jsonify(message="Invalid email address"), 400
 
-    if response.status_code == 200:
-        return jsonify(response.json()), 200
+    # Hash the password
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+
+    # Create user
+    user = supabase.auth.sign_up(
+        email=email, password=hashed_password.decode('utf-8'))
+
+    if user:
+        return jsonify(message="User created successfully"), 201, {"Location": '/'}
     else:
-        return jsonify(response.json()), 400
-
-
-@app.route('/login', methods=['POST'])
-def login():
-    email = request.json.get('email')
-    password = request.json.get('password')
-
-    data = {"email": email, "password": password}
-    response = httpx.post(f"{SUPABASE_URL}/auth/v1/token?grant_type=password",
-                          json=data, headers=SUPABASE_HEADERS)
-
-    if response.status_code == 200:
-        return jsonify(response.json()), 200
-    else:
-        return jsonify(response.json()), 400
+        return jsonify(message="Error creating user"), 400
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=5000)
