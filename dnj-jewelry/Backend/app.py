@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from supabase_py import create_client
 from dotenv import load_dotenv
 from email_validator import validate_email, EmailNotValidError
@@ -10,6 +11,7 @@ load_dotenv()
 
 # Flask application
 app = Flask(__name__)
+CORS(app)
 
 # Supabase client
 supabase_url = os.environ['SUPABASE_URL']

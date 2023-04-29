@@ -12,6 +12,17 @@ function Forum() {
         console.log("DATA: ", data)
     }
 
+ /**    const posts = posts.map((post)) => {
+        return (
+            <div className="col-sm-6" key={forum.post_id}>
+                <a href="#" onClick={() => history.push(`/forum/${post.post_id}`)}>
+
+                </a>
+            </div>
+        )
+
+    } */
+
     useEffect(() => {
         fetchPosts()
     }, [])
