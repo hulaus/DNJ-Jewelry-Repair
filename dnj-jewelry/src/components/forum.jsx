@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
+import { baseUrl } from "../App";
 
 
 function Forum() {
@@ -14,7 +15,7 @@ function Forum() {
     useEffect(() => {
         fetchPosts()
     }, [])
-    
+
     return(
         <div className="forumWrap">
         <h1>The Jewelry Fix</h1>
