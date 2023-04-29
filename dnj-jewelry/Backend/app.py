@@ -1,9 +1,14 @@
-from flask import Flask, jsonify, request
-from supabase_py import create_client
+# Flask application logic and routes + (the routes in routes.py)
 from dotenv import load_dotenv
-from email_validator import validate_email, EmailNotValidError
 import os
+from email_validator import validate_email, EmailNotValidError
+from flask import Flask, jsonify, request
+# from flask_sqlalchemy import SQLAlchemy
+from supabase_py import create_client
 import bcrypt
+from api.routes import my_routes
+# from api.routes import models
+
 
 # Load environment variables
 load_dotenv()
@@ -11,12 +16,16 @@ load_dotenv()
 # Flask application
 app = Flask(__name__)
 
-# Supabase client
+# Routes from routes.py
+app.register_blueprint(my_routes)
+
+# Supabase client | Secret_key adds security
 supabase_url = os.environ['SUPABASE_URL']
 supabase_key = os.environ['SUPABASE_API_KEY']
+supabase_secret_key = os.environ['SUPABASE_SECRET_KEY']
 supabase = create_client(supabase_url, supabase_key)
 
-# Signup route 
+# Signup route | Working in progress
 @app.route('/signup', methods=['POST'])
 def signup():
     email = request.form.get('email')
@@ -32,7 +41,8 @@ def signup():
     hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
     # Create user
-    user = supabase.auth.sign_up(email=email, password=hashed_password.decode('utf-8'))
+    user = supabase.auth.sign_up(
+        email=email, password=hashed_password.decode('utf-8'))
 
     if user:
         return jsonify(message="User created successfully"), 201, {"Location": '/'}
@@ -40,63 +50,5 @@ def signup():
         return jsonify(message="Error creating user"), 400
 
 
-# Render sign-up form | Temporary should run by frontend
-@app.route('/signup', methods=['GET'])
-def signup_form():
-    html = '''
-        <!DOCTYPE html>
-        <html>
-            <head>
-                <title>Sign up</title>
-            </head>
-            <body>
-                <h1>Sign up</h1>
-                <form method="POST" action="/signup">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br><br>
-                    <input type="submit" value="Sign up">
-                </form>
-            </body>
-        </html>
-    '''
-    return html
-
-# Login route
-@app.route('/login', methods=['POST'])
-def login():
-    email = request.form.get('email')
-    password = request.form.get('password')
-
-    user = supabase.auth.sign_in(email=email, password=password)
-    if type(user) == str:
-        return jsonify(message=user), 401
-
-    return jsonify(user), 200
-
-# Render login form | Temporary should run by frontend
-@app.route('/login', methods=['GET'])
-def login_form():
-    html = '''
-        <!DOCTYPE html>
-        <html>
-            <head>
-                <title>Login</title>
-            </head>
-            <body>
-                <h1>Login</h1>
-                <form method="POST" action="/login">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br><br>
-                    <input type="submit" value="Login">
-                </form>
-            </body>
-        </html>
-    '''
-    return html
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
