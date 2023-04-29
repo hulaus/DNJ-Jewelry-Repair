@@ -10,6 +10,7 @@ import Navbar from './components/navbar';
 function App() {
   return (
     <div className="App">
+      <header>
    <Navbar />
    <BrowserRouter>
     <Routes>
@@ -20,6 +21,7 @@ function App() {
       <Route path="Custom" element={<Custom />} />
     </Routes>
    </BrowserRouter>
+   </header>
     </div>
 
   );
