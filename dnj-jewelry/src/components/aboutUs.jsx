@@ -1,9 +1,11 @@
 import React from "react";
+import Dad from './assets/images/Jeweler.png'
 
 function AboutUs () {
     return (
         <div class="AboutUs">
-            <h1>About Us Page</h1>
+            <h1 className="headingh1">About Us !</h1>
+            <img className="aboutUsPic" src={Dad} alt="Picture of Master Jeweler Behind Jewelry Display Ready to Help Customers walking through the door."/>
             <p>Info about us</p>
             <p>resize the browser window to make sure its responsive</p>
            

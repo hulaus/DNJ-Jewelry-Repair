@@ -31,12 +31,15 @@
 }
 
 /* This section is for the About us Page */
+.headingh1 {
+  text-align: center;
+  justify-content: center;
+}
 
-  .picture-inside-container{
-    display: block;
+  .aboutUsPic {
+  display: block;
   margin: 0 auto;
   width: 70%;
-  padding-top: 2rem;
   }
   
 
