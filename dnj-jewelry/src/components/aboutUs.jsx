@@ -1,10 +1,19 @@
 import React from "react";
 import Dad from './assets/images/Jeweler.png'
+import AboutUsCards from '../components/assets/AboutUs/aboutUsCards'
 
 function AboutUs () {
     return (
+      <>
+      <div class="AboutUs">
+        <img className="aboutUsPic" src={ Dad } alt="Picture of Master Jeweler Behind Jewelry Display Ready to Help Customers Walking through the door"/>
+      </div>
+      <div>
+        <AboutUsCards />
+      </div>
+      </>
+      /*
         <div class="AboutUs">
-            <h1 className="headingh1">About Us !</h1>
             <img className="aboutUsPic" src={Dad} alt="Picture of Master Jeweler Behind Jewelry Display Ready to Help Customers walking through the door."/>
             <p>Info about us</p>
             <p>resize the browser window to make sure its responsive</p>
@@ -51,7 +60,7 @@ function AboutUs () {
 
         </div>
        </div>    
-
+*/
     )
 
 

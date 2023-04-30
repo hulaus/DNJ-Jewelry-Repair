@@ -29,19 +29,37 @@
   background-color: burlywood;
   color: whitesmoke;
 }
+/* This section is for the Home Page*/
+.welcomebanner {
+  display: block;
+  margin: 0 auto;
+  max-width: 70rem;
+  min-width: 70%;
+  height: 20rem;
+  padding-top: 2rem;
+}
 
 /* This section is for the About us Page */
-.headingh1 {
-  text-align: center;
-  justify-content: center;
+
+.AboutUsCard{
+  background: rgb(252, 244, 231);
+  padding-top: 2rem;
 }
 
   .aboutUsPic {
   display: block;
   margin: 0 auto;
   width: 70%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   }
+
   
+  .CardImage {
+    display: block;
+    margin: 0 auto;
+    width: 70%
+  }
 
 /* Will probably be using this code later (under)*/
 /*
@@ -152,12 +170,3 @@ a.instagram {
 a.tiktok {
   color: black
 }
-
-
-
-
-
-
-/* FINISH MAKING THE FOOTER, ABOUT US PAGE AND START ON STORE (DURING CLASS)
-AFTER CLASS - FINISH STORE, WORK ON BLOG AND PICTURES !!
-*/

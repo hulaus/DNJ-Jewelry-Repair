@@ -7,7 +7,7 @@ function Home() {
     return (
     <>
     <div classname="image-container">
-        <img className="picture-inside-container" src={ WelcomeBanner }  alt="DNJ Jewelry Repair's Welcome Banner with the motto The Right way for Jewelry"/>
+        <img className="welcomebanner" src={ WelcomeBanner }  alt="DNJ Jewelry Repair's Welcome Banner with the motto The Right way for Jewelry"/>
     </div>
     </>
         )

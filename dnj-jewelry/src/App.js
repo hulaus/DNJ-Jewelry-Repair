@@ -6,7 +6,8 @@ import Forum from './components/forum';
 import Aboutus from './components/aboutUs';
 import Custom from './components/custom';
 import Navbar from './components/navbar';
-import Footer from './components/footer'
+
+
 function App() {
   return (
     <>
@@ -24,7 +25,6 @@ function App() {
    </BrowserRouter>
    </header>
     </div>
-    <Footer />
     </>
   );
 }
