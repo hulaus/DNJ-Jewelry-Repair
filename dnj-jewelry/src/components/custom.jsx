@@ -16,7 +16,7 @@ function customCards() {
         <>
             <img className="banner" src={customJewelry} alt="DNJ Custom Jewelry" />
             <br></br>
-                <div className="container">
+                <div className="CustomContainer">
                     <Card className="Card" >
                         <Card.Img className="rightPicture"  src={Bracelet}/>
                         <Card.Body className="cusspace">
