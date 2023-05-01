@@ -1,6 +1,0 @@
-FLASK_APP=app
-FLASK_ENV=development
-
-SUPABASE_URL= https://ourxsavvndqsjtfmahwf.supabase.co
-SUPABASE_KEY= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cnhzYXZ2bmRxc2p0Zm1haHdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODIxNDEyNjMsImV4cCI6MTk5NzcxNzI2M30.PR0OIujTNf9ylzH3PBEp5YKBX3Ui0VyR8UA6Q1LUrt8
-
