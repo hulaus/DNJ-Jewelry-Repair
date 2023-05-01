@@ -8,10 +8,10 @@ function AboutUs () {
     return (
       <>
       <div className="AboutUsLogo">
-      <img src={ DNJ } alt="DNJ Jewelry Repair's Logo"/>
+      <img src={ DNJ } alt="DNJ Jewelry Repair"/>
       </div>
       <div class="AboutUs">
-        <img className="aboutUsPic" src={ Dad } alt="Picture of Master Jeweler Behind Jewelry Display Ready to Help Customers Walking through the door"/>
+        <img className="aboutUsPic" src={ Dad } alt="Master Jeweler Behind Jewelry Display Ready to Help Customers Walking through the door"/>
       </div>
       <div className="HeadingUnderPicture">
         <h2>About DNJ Jewelry Repair</h2>
