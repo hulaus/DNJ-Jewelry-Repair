@@ -95,10 +95,11 @@ function Customform() {
                     <h4>Custom Piece Description</h4>
                     <textarea name="inquiry" id="inquiry" value={inquiry} rows={5} cols={40} onChange={handleInquiry} required/>
                 </label>
-                <button name="customInquiry" type="submit"> Submit </button>
+                <button name="customInquiry" type="submit">  
                 {/* Added next 2 lines */}
                 {" "}
                 Submit{" "}
+                </button>
             </form>
          </div>
         <div className="ContactUsInfoCustom">
