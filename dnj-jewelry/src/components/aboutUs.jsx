@@ -14,7 +14,7 @@ function AboutUs () {
         <img className="aboutUsPic" src={ Dad } alt="Picture of Master Jeweler Behind Jewelry Display Ready to Help Customers Walking through the door"/>
       </div>
       <div className="HeadingUnderPicture">
-        <h4>About DNJ Jewelry Repair</h4>
+        <h2>About DNJ Jewelry Repair</h2>
         </div>
         <div>
         <AboutUsCards />
