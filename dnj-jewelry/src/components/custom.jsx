@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import customJewelry from "./assets/images/customJewelry.jpg";
-import Bracelet from "./assets/images/bracelet.png";
 import PinUpClose from "./assets/images/pinUpClose.png";
-import DangleEarrings from "./assets/images/dangleEarrings.png";
 import Customform from "./customForm";
-
+import ThreeFourLion from './assets/images/ThreeFourthsLionFace.png'
+import ReligiousPendant from './assets/images/ReligiousPendant.png'
+import TwoWeddingBands from './assets/images/TwoWeddingBands.jpeg'
 
 function customCards() {
   return (
@@ -14,7 +14,7 @@ function customCards() {
       <div className="container" style={{ paddingTop: "2rem" }}>
         <Card className="customCard">
           <div className="imgContainer">
-            <Card.Img className="rightPicture" src={Bracelet} />
+            <Card.Img className="rightPicture" src={ThreeFourLion} />
           </div>
           <Card.Body className="card-content">
             <Card.Title>
@@ -33,7 +33,7 @@ function customCards() {
         <br />
         <Card className="customCard middleCard">
           <div className="imgContainer">
-            <Card.Img className="leftPicture" src={DangleEarrings} />
+            <Card.Img className="leftPicture" src={ReligiousPendant} />
           </div>
           <Card.Body className="card-content">
             <Card.Title>
@@ -52,7 +52,7 @@ function customCards() {
         <br />
         <Card className="customCard">
           <div className="imgContainer">
-            <Card.Img className="rightPicture" src={PinUpClose} />
+            <Card.Img className="rightPicture" src={TwoWeddingBands} />
           </div>
           <Card.Body className="card-content">
           <Card.Title >
