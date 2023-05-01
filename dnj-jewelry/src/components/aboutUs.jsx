@@ -1,55 +1,29 @@
 import React from "react";
+import Dad from './assets/images/Jeweler.png'
+import AboutUsCards from '../components/assets/AboutUs/aboutUsCards'
+import Contactus from "./assets/AboutUs/ContactUs";
+import DNJ from './assets/images/dnj.png'
 
 function AboutUs () {
     return (
-        <div class="AboutUs">
-            <h1>About Us Page</h1>
-            <p>Info about us</p>
-            <p>resize the browser window to make sure its responsive</p>
-           
-            <h2 className="craft">Our Values</h2>
-            <div className="row"> 
-                <div className="column">
-                    <div className="card">
-                        <img src="/pictures/earing.png" alt="earing"></img>
-                        <div className="container">
-                        <h2>info</h2>
-                        <p className="title">example</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>jane@example.com</p>
-                        <p><button className="button">if you want to show more info</button></p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="column">
-                <div className="card">
-                    <img src="/pictures/earing.png" alt="earing"></img>
-                    <div className="container">
-                    <h2>info</h2>
-                    <p className="title">example</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button className="button">if you want to show more info</button></p>
-                </div>
-              </div>
-            </div>
-            <div className="column">
-    <div className="card">
-      <img src="/pictures/earing.png" alt="earing"></img>
-      <div className="container">
-        <h2>info</h2>
-        <p className="title">example</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button className="button">Contact</button></p>
+      <>
+      <div className="AboutUsLogo">
+      <img src={ DNJ } alt="DNJ Jewelry Repair's Logo"/>
       </div>
-    </div>
-  </div>
-
+      <div class="AboutUs">
+        <img className="aboutUsPic" src={ Dad } alt="Picture of Master Jeweler Behind Jewelry Display Ready to Help Customers Walking through the door"/>
+      </div>
+      <div className="HeadingUnderPicture">
+        <h2>About DNJ Jewelry Repair</h2>
         </div>
-       </div>    
-
+        <div>
+        <AboutUsCards />
+      </div>
+      <div>
+        <Contactus />
+      </div>
+      </>
+    
     )
 
 

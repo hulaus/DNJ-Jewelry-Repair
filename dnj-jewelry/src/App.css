@@ -29,40 +29,150 @@
   background-color: burlywood;
   color: whitesmoke;
 }
-
-/* Will probably be using this code later (under)*/
-/*
-
-.imageLeft{
-  margin: 75px;
+/* This section is for the Home Page*/
+.welcomebanner {
+  display: block;
+  margin: 0 auto;
+  max-width: 70rem;
+  min-width: 70%;
+  height: 20rem;
+  padding-top: 2rem;
 }
 
-.textRight{
-  padding-left: 2rem;
-  text-align: right;
+/* This section is for the About us Page */
+.AboutUsLogo img{
+  width: 6rem;
+  padding-top: 1rem;
+  display: block;
+  margin: 0 auto;
+  min-width: none;
 }
 
-
-.rightPicture{
-  width:400px;
-  height: 180px;
-  margin-left: 180px;
-  overflow: hidden;
-  text-align: left;
+.HeadingUnderPicture{
+  text-align: center;
 }
 
-.leftPicture{
-  width: 50%;
+.g-3 {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-
-.secondCard {
-  width: 320px;
+.AboutUsCard{
   padding: 20px;
-  border: 1 px solid burlywood;
+  margin: 0 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+@media screen  and (max-width: 767px) {
+  .AboutUsCard{
+    margin-bottom: 40px;
+  }
 }
 
-*/
+.CardTitle{
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.TextInCard{
+  text-align: center;
+}
+
+  .aboutUsPic {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  }
+
+  .CardImage {
+    display: block;
+    margin: 0 auto;
+    width: 70%
+  }
+
+.ContactUsHeader{
+  padding-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+form button[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0066b2;
+}
+
+.ContactUsContainer {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.ContactUsForm{
+  width:60%;
+}
+
+.ContactUsInfo {
+  width: 25%;
+  margin-left: 2%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.ContactUsInfo h4 {
+  font-weight: bold;
+}
+
+.ContactUsInfo p{
+  margin: 0;
+  margin-bottom: 10px
+}
+
 /* This section is for the Custom pieces page*/
 .banner{
   display: block;
@@ -110,3 +220,32 @@ flex: 0 0 25%;
 }
 /* Sizing Conventions */
 
+/* This is for the Footer(Social Links)*/
+
+a.social{
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover{
+  transform: translateY(-2px);
+}
+
+a.facebook {
+  color: #4968ad
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.tiktok {
+  color: black
+}
