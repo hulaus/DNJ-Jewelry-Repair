@@ -11,7 +11,7 @@ function Navbar() {
                         <a href="/jewelry">Jewelry</a>
                         <a href="/aboutUs">About Us</a>
                         <a href="/Custom">Custom Pieces</a>
-                        <a href="/forum">The Jewelry Fix</a>
+                        <a href="/ImageGallery">Custom Creation Gallery</a>
                     </div>
                 </main>
         </div>

@@ -1,11 +1,10 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import customJewelry from "./assets/images/customJewelry.jpg";
-import PinUpClose from "./assets/images/pinUpClose.png";
 import Customform from "./customForm";
-import ThreeFourLion from './assets/images/ThreeFourthsLionFace.png'
-import ReligiousPendant from './assets/images/ReligiousPendant.png'
-import TwoWeddingBands from './assets/images/TwoWeddingBands.jpeg'
+import ThreeFourLion from './assets/images/ThreeFourthsLionFace.png';
+import ReligiousPendant from './assets/images/ReligiousPendant.png';
+import TwoWeddingBands from './assets/images/TwoWeddingBands.jpeg';
 
 function customCards() {
   return (
