@@ -40,9 +40,13 @@
 }
 
 /* This section is for the About us Page */
+.g-3 {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 .AboutUsCard{
-  background: rgb(252, 244, 231);
+  background: rgb(249, 249, 249);
   padding-top: 2rem;
 }
 
@@ -54,7 +58,6 @@
   padding-bottom: 2rem;
   }
 
-  
   .CardImage {
     display: block;
     margin: 0 auto;
