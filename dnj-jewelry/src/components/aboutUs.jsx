@@ -1,9 +1,32 @@
 import React from "react";
+import Dad from './assets/images/Jeweler.png'
+import AboutUsCards from '../components/assets/AboutUs/aboutUsCards'
+import Contactus from "./assets/AboutUs/ContactUs";
+import DNJ from './assets/images/dnj.png'
 
-function Aboutus () {
+function AboutUs () {
     return (
-        <h1>About Us</h1>
+      <>
+      <div className="AboutUsLogo">
+      <img src={ DNJ } alt="DNJ Jewelry Repair's Logo"/>
+      </div>
+      <div class="AboutUs">
+        <img className="aboutUsPic" src={ Dad } alt="Picture of Master Jeweler Behind Jewelry Display Ready to Help Customers Walking through the door"/>
+      </div>
+      <div className="HeadingUnderPicture">
+        <h2>About DNJ Jewelry Repair</h2>
+        </div>
+        <div>
+        <AboutUsCards />
+      </div>
+      <div>
+        <Contactus />
+      </div>
+      </>
+    
     )
+
+
 }
 
-export default Aboutus
+export default AboutUs
