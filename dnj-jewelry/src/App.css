@@ -178,26 +178,41 @@ form button[type="submit"]:hover {
   display: block;
   margin: 0 auto;
   width: 70%;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .Card {
-display: flex;
+display: inline-block;
 flex: 0 0 25%;
+margin: 1.5em;
+padding: .5em;
 }
 
 .leftPicture {
   width: 320px;
   padding: 20px;
   border: 1px solid burlywood;
+  float:right;
   display:inline-table;
+}
+
+.bodyody {
+  text-align: left;
+
 }
 
 .rightPicture{
   width: 320px;
   padding: 20px;
+  float: left;
   border: 1px solid burlywood;
   display:inline-table;
+  margin-right: 1.5em;
+}
+
+.introCard {
+  font-weight: bold;
+  font-style: oblique;
 }
 
 /* This section is for the form in the Custom Pieces File*/
