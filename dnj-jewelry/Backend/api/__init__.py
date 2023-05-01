@@ -1,4 +1,3 @@
-# Flask application logic and routes + (the routes in routes.py)
 from dotenv import load_dotenv
 import os
 from email_validator import validate_email, EmailNotValidError
@@ -17,8 +16,9 @@ from api import views
 load_dotenv()
 
 # Flask application
-app = Flask(__name__)
-CORS(app)
+def create_app():
+    app = Flask(__name__)
+    CORS(app)
 
 # Routes from routes.py
 app.register_blueprint(my_routes)

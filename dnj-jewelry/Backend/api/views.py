@@ -12,8 +12,18 @@ def jewelry():
     data={"message": "Jewelry endpoint"}
     return jsonify(data)
 
-#@my_routes.route('/forum')
-#def forum():
+@my_routes.route('/forum')
+def forum(): 
+    data=forum.query.all()
+
+    all_posts = []
+    for post in forum:
+        forum_dict= {}
+        forum_dict['post_descript'] = forum.post_descript
+        forum_dict['created_at']= forum.created_at
+        all_posts.append(forum_dict)
+    return (jsonify(data))
+
     
 @my_routes.route('/aboutus')   
 def aboutus():
