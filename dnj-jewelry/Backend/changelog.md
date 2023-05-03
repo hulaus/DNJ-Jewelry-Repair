@@ -25,6 +25,9 @@
 
 *pip install bcrypt*
 
+*pip install --upgrade --force-reinstall supabase*
+
+
 ## Debug 
 
 *app run(debug=True)*
