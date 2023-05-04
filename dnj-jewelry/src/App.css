@@ -273,10 +273,42 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
 /* This is for the Footer(Social Links)*/
 
+.social-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: blanchedalmond;
+}
+
+.SocialHead {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.social-icons{
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+
 a.social{
   margin: 0 1rem;
   transition: transform 250ms;
   display: inline-block;
+  font-size: 16px;
 }
 
 a.social:hover{
