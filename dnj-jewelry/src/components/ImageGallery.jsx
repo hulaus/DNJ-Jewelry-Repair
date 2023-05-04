@@ -3,13 +3,16 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import ReligiousPendant from './assets/images/ReligiousPendant.png'
 
 const images = [  "https://picsum.photos/100/200", 
-                "https://picsum.photos/200/300",  
-                "https://picsum.photos/100/300",  
+                "https://picsum.photos/200/500",  
+                "https://picsum.photos/100/400",  
                 "https://picsum.photos/300/150", 
                  "https://picsum.photos/200/300", 
                   "https://picsum.photos/100/200", 
                    "https://picsum.photos/250/350", 
                     "https://picsum.photos/200/300",
+                    "https://picsum.photos/100/200", 
+                   "https://picsum.photos/300/350", 
+                    "https://picsum.photos/150/300",
                 ];
 
 const ImageGallery = () => {
