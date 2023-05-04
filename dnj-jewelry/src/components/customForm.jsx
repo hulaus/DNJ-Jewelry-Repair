@@ -54,9 +54,9 @@ function Customform() {
 
     return (
         <>
-            <h1>Custom Jewelry Inquiry Form</h1>
+            <h2 className="ContactUsHeader" style={{textAlign:'center'}}>Custom Jewelry Inquiry Form</h2>
             <hr />
-            <p>
+            <p className="ContactUsParagraph">
                 Request Pricing for Your Custom Jewelry Creations
                 Please complete the form below to inquire about pricing for our custom jewelry creations.
                 Our team will swiftly provide you with detailed pricing and information.
@@ -66,20 +66,22 @@ function Customform() {
             </p>
             <hr />
             {/* Was <form onSubmit={handleSumbit}> */}
-            <form onSubmit={handleSubmit}>
-                <label>
+            <div className="ContactUsContainer">
+          <div className="ContactUsForm">
+            <form onSubmit={handleSubmit} className="FormInCustom">
+                <label for="name">
                     Full Name:
-                    <input type="string" name="First Name" id="name" value={name} onChange={e => setName(e.target.value)} />
+                    <input type="text" className="form-control" name="name" id="name" value={name} onChange={e => setName(e.target.value)} required/>
                 </label>
-                <label>
+                <label for="phone" >
                     Phone Number:
-                    <input type="string" name="Phone Number" id="contactNumber" value={contact} onChange={e => setContact(e.target.value)} />
+                    <input type="tel" name="Phone Number" id="contactNumber" value={contact} onChange={e => setContact(e.target.value)} required/>
                 </label>
-                <label>
+                <label for="email">
                     Email Address
-                    <input type="string" name="Email Address" id="email" value={email} onChange={e => setEmail(e.target.value)} />
+                    <input type="text" className="form-control" name="email" id="email" value={email} onChange={e => setEmail(e.target.value)} required/>
                 </label>
-                <label>
+                <label for="jewelryType">
                     Custom Jewelry Type:
                     <select value={jewelryType} onChange={e => setJewelryType(e.target.value)}>
                         {options.map((value) => (
@@ -89,17 +91,57 @@ function Customform() {
                         ))}
                     </select>
                 </label>
-                <label>
-                    Inquiry
-                    <textarea name="inquiry" id="inquiry" value={inquiry} rows={4} cols={40} onChange={handleInquiry} />
+                <label for="message">
+                    <h4>Custom Piece Description</h4>
+                    <textarea name="inquiry" id="inquiry" value={inquiry} rows={5} cols={40} onChange={handleInquiry} required/>
                 </label>
-                <button name="customInquiry" type="submit"> Submit </button>
+                <button name="customInquiry" type="submit">  
                 {/* Added next 2 lines */}
                 {" "}
                 Submit{" "}
+                </button>
             </form>
+         </div>
+        <div className="ContactUsInfoCustom">
+            <h3>Dont like filling out Forms? Come In Today
+                Or Give us a call!
+            </h3>
+            <h4>Business Address:</h4>
+            <p>3021 Business Ln.</p>
+            <p>Las Vegas, NV 89103</p>
+            <h4>Phone Number:</h4>
+            <p>(702) 506-5591</p>
+            <h4>Email:</h4>
+            <p>dnjjewelryco@gmail.com</p>
+            <h4>Store Hours:</h4>
+            <p>Monday-Saturday: 10am-6pm</p>
+            <p>Sunday: Closed</p>
+          </div>
+          </div>
         </>
     )
 }
 
 export default Customform
+
+/* 
+ <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+*/

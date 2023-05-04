@@ -1,12 +1,12 @@
-import React, { useState } from 'react' // ADDED
+import React, { useState } from 'react'
 import Dnj from "./assets/images/dnj.png"
 
 function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false); // ADDED
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => { // ADDED
-        console.log("Menu open:", menuOpen); // ADDED
-        setMenuOpen(!menuOpen); // ADDED
+    const toggleMenu = () => {
+        console.log("Menu open:", menuOpen);
+        setMenuOpen(!menuOpen); 
     }
 
     return (
@@ -19,7 +19,6 @@ function Navbar() {
                     <a href="/aboutUs">About Us</a>
                     <a href="/Custom">Custom Pieces</a>
                     <a href="/forum">The Jewelry Fix</a>
-                    {/* ADDED */}
                     <button onClick={toggleMenu} className="hamburger"> 
                         &#9776;
                     </button>
@@ -29,7 +28,6 @@ function Navbar() {
                             <a href="/signup">Sign Up</a>
                         </div>
                     )}
-                    {/* END */}
                 </div>
             </main>
         </div>
