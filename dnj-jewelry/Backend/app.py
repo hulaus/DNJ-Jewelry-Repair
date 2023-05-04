@@ -1,9 +1,11 @@
-from dotenv import load_dotenv
 import os
+import httpx
+import requests
+from dotenv import load_dotenv
 from email_validator import validate_email, EmailNotValidError
-from flask import Flask, jsonify, request
-from supabase_py import create_client
 import bcrypt
+from supabase_py import create_client
+from flask import Flask, jsonify, request
 from api.routes import my_routes
 
 load_dotenv()
@@ -16,9 +18,8 @@ supabase_url = os.environ['SUPABASE_URL']
 supabase_key = os.environ['SUPABASE_API_KEY']
 supabase_secret_key = os.environ['SUPABASE_SECRET_KEY']
 
+session = requests.Session()
 supabase = create_client(supabase_url, supabase_key)
-
-# v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v DON'T TOUCH v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v
 
 # Signup route 
 @app.route('/signup', methods=['POST'])

@@ -23,3 +23,6 @@ venv
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# ignore .pyc files
+*.pyc
