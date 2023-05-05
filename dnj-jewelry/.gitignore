@@ -26,3 +26,5 @@ yarn-error.log*
 
 # Ignore .pyc files
 *.pyc
+Backend/__pycache__/
+Backend/api/__pycache__/
