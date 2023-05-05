@@ -6,10 +6,10 @@ import Forum from './components/forum';
 import Aboutus from './components/aboutUs';
 import Custom from './components/custom';
 import Navbar from './components/navbar';
-import { useMediaQuery } from 'react-responsive'
 
 
-export const baseUrl = 'http:localhost:5000'
+
+export const baseUrl = 'http://localhost:5000'
 
 function App() {
 
@@ -17,7 +17,6 @@ function App() {
     <div className="App">
    <Navbar />
    <BrowserRouter>
-   
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="jewelry" element={<Jewelry />} />
