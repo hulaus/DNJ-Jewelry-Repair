@@ -1,6 +1,8 @@
 import React from "react"
 // import WelcomeBanner from './assets/images/Welcome_Banner.jpg'
 import Repairs from './assets/videos/Ring.mp4'
+import { Link } from "react-router-dom"
+import JewelrySketch from './assets/images/JewelrySketch.jpeg'
 
 function Home() {
     return (
@@ -34,6 +36,16 @@ function Home() {
               <li>Jewelry Polishing & Cleaning</li>
             </ul>
             <a href="/services">View all services</a>
+          </div>
+          <div className="custom-button-container">
+          <h2 className="custom-button-header">Get Your Custom Piece</h2>
+          <p className="custom-button-description">Looking for a unique piece of jewelry? Let us create a custom piece just for you!</p>
+          <div className="custom-button">
+            <Link to="/custom">
+              <img src={JewelrySketch} alt="Jewelry Sketch in black and white" />
+              <span className="custom-button-text">Custom Pieces</span>
+            </Link>
+          </div>
           </div>
         </div>
       </>
