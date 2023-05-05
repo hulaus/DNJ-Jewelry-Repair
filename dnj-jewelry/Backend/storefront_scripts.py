@@ -1,14 +1,8 @@
 import requests
 import json
 
-GRAPHQL_QUERY = """
-  query {
-    shop {
-      name
-    }
-  }
-"""
-
+storeUrl = 
+'''
 def get_server_side_props():
   # Get the Storefront API url
   response = requests.post(
@@ -23,3 +17,9 @@ def get_server_side_props():
   data = json.loads(response.text)
 
   return {"props": data}
+
+  '''
+
+def get_products():
+  endpoint = ""
+  product = requests.get(storeUrl + endpoint)
