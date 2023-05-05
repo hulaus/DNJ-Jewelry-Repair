@@ -12,6 +12,7 @@ function App() {
   return (
     <>
     <div className="App">
+      <div className='navbar-wrapper'>
       <header>
    <Navbar />
    <BrowserRouter>
@@ -25,11 +26,12 @@ function App() {
    </BrowserRouter>
    </header>
     </div>
-    <div>
+    <div className='footer-wrapper'>
       <footer>
         <SocialFollow />
       </footer>
     </div>
+   </div> 
     </>
   );
 }
