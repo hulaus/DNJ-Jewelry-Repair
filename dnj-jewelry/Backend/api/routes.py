@@ -9,7 +9,7 @@ def home():
     return jsonify(data)
 
 
-@my_routes.route('/jewlry')
+@my_routes.route('/jewelry')
 def jewelry():
     data = {"message": "Jewelry endpoint"}
     return jsonify(data)
