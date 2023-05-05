@@ -103,9 +103,9 @@ function Customform() {
             </form>
          </div>
         <div className="ContactUsInfoCustom">
-            <h3>Dont like filling out Forms? Come In Today
-                Or Give us a call!
-            </h3>
+            <h3>Dont like filling out Forms? </h3> 
+            <h2>Come In Today
+                or Give us a Call!</h2>
             <h4>Business Address:</h4>
             <p>3021 Business Ln.</p>
             <p>Las Vegas, NV 89103</p>
