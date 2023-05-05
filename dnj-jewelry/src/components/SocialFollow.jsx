@@ -5,7 +5,7 @@ import { faInstagram, faFacebook,faTwitter, faTiktok } from "@fortawesome/free-b
 
 function SocialFollow() {
     return(
-        <div class="social-footer">
+        <div  className='social-footer'>
             <h3 className="SocialHead">Follow Us!</h3>
             <div  className="social-icons">
             <a href="https://www.instagram.com/dnjjewelry/" className="instagram social">

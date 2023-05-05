@@ -6,7 +6,7 @@ import Aboutus from './components/aboutUs';
 import Custom from './components/custom';
 import Navbar from './components/navbar';
 import ImageGallery from './components/ImageGallery';
-import SocialFollow from './components/SocialFollow'; 
+// import SocialFollow from './components/SocialFollow'; 
 
 function App() {
   return (
@@ -25,11 +25,6 @@ function App() {
     </Routes>
    </BrowserRouter>
    </header>
-    </div>
-    <div className='footer-wrapper'>
-      <footer>
-        <SocialFollow />
-      </footer>
     </div>
    </div> 
     </>
