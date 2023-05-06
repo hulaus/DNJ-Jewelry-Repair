@@ -27,7 +27,6 @@ function Navbar() {
                     {menuOpen && (
                         <div className="dropdown">
                             <a href="/login">Login</a>
-                            <a href="/signup">Sign Up</a>
                             <a href='/'> Home </a>
                             <a href='/jewelry'> Jewelry </a>
                             <a href="/aboutUs">About Us</a>
