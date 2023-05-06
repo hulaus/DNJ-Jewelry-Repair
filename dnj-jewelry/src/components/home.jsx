@@ -39,6 +39,7 @@ function Home() {
               <li>Diamond Replacement</li>
               <li>Chain Soldering</li>
               <li>Jewelry Polishing & Cleaning</li>
+              <li>Jewelry Restoration</li>
             </ul>
             <a href="/services">View all services</a>
           </div>
@@ -54,8 +55,9 @@ function Home() {
           </div>
           <div className="google-reviews">
             <div className="testimonials">
-            <h2> Testimonials </h2>
-                <p>See what our customers are saying about us!</p>
+            <h2> What our customers are saying </h2>
+                <p>Check out our Google reviews</p>
+                <a href="https://g.page/r/CXGUi3AWops3EB0/review" class="btn-review">Leave a review</a>
             </div>
                 <div className="google-photos">
             <img src={ ReviewOne } alt="google review from a customer"/>
@@ -64,6 +66,13 @@ function Home() {
             <img src={ ReviewFour } alt="google review from a customer" />
                 </div>
           </div>
+            <div className="contact-info">
+                <h2>Get in touch with us</h2>
+                <p>3021 Business Ln.</p>
+                <p>Las Vegas, NV 89103</p>
+                <p>Phone Number: (702) 506-5591</p>
+                <p>Email: dnjjewelryco@gmail.com</p>
+            </div>
         </div>
       </>
     )
