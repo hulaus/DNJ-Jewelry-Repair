@@ -6,7 +6,7 @@ import WelcomeBanner from './assets/images/Welcome_Banner.jpg'
 function Home() {
     return (
     <>
-    <div classname="image-container">
+    <div className="image-container">
         <img className="welcomebanner" src={ WelcomeBanner }  alt="DNJ Jewelry Repair's Welcome Banner with the motto The Right way for Jewelry"/>
     </div>
     </>
