@@ -194,6 +194,90 @@
   z-index: 1;
 }
 
+.google-reviews {
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonials h2{
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.testimonials p {
+  font-size: 18px;
+  color: #999;
+}
+
+
+.btn-review {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-review:hover {
+  background-color: #fff;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.google-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.google-photos img{
+  width: 50%;
+  height: auto;
+  max-width: 400px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .google-photos {
+    flex-direction: column;
+    }
+
+  .google-photos img{
+    max-width: 100%;
+  }
+}
+
+.contact-info {
+  text-align: center;
+  margin: 60px 0;
+  color: #555;
+}
+
+.contact-info h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
 /* This section is for the About us Page */
 .AboutUsLogo img{
   width: 6rem;
