@@ -26,8 +26,8 @@ function Navbar() {
                         &#9776;
                     </button>
                     {menuOpen && (
-                        <div className="dropdown">
-                           <a href="/login">Login</a>
+                        <div className="hamdropdown">
+                            <a href="/login">Login</a>
                             <a href='/'> Home </a>
                             <a href='/jewelry'> Jewelry </a>
                             <a href="/aboutUs">About Us</a>

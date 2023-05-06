@@ -31,47 +31,6 @@
   background-color: burlywood;
   color: whitesmoke;
 }
-/* Login/Signup in navbar */
-.hamburger {
-  font-size: 25px;
-  position: absolute;
-  top: 1.3rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 21px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 4.8rem;
-  right: .5rem;
-  background-color: blanchedalmond; 
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5%;
-  z-index: 100;
-}
-
-.dropdown a {
-  font-size: 14px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: black;
-} 
-
-.dropdown a:hover {
-  color:black;
-  background-color: bisque;
-} 
 
 /* Login/Signup in navbar */
 .hamburger {
@@ -89,7 +48,7 @@
   cursor: pointer;
 }
 
-.dropdown {
+.hamdropdown {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -99,7 +58,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5%;
-  z-index: 100;
+  z-index: 1;
 }
 
 .dropdown a {
@@ -508,8 +467,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Sizing Conventions */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -519,6 +477,33 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   .hamburger {
     display: flex;
   }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.8rem;
+    right: .5rem;
+    background-color: blanchedalmond; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    z-index: 100;
+  }
+  
+  .dropdown a {
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  } 
+  
+  .dropdown a:hover {
+    color:black;
+    background-color: bisque;
+  } 
+  
 
   .links {
     display: none;
@@ -660,7 +645,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-top: 0;
     padding-top: .5rem;
   }
-}
+
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
