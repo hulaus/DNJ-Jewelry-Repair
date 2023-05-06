@@ -3,6 +3,11 @@ import React from "react"
 import Repairs from './assets/videos/Ring.mp4'
 import { Link } from "react-router-dom"
 import JewelrySketch from './assets/images/JewelrySketch.jpeg'
+import ReviewOne from './assets/images/reviewOne.png'
+import ReviewTwo from './assets/images/reviewTwo.png'
+import ReviewThree from './assets/images/reviewThree.png'
+import ReviewFour from './assets/images/reviewFour.png'
+
 
 function Home() {
     return (
@@ -34,6 +39,7 @@ function Home() {
               <li>Diamond Replacement</li>
               <li>Chain Soldering</li>
               <li>Jewelry Polishing & Cleaning</li>
+              <li>Jewelry Restoration</li>
             </ul>
             <a href="/services">View all services</a>
           </div>
@@ -47,6 +53,26 @@ function Home() {
             </Link>
           </div>
           </div>
+          <div className="google-reviews">
+            <div className="testimonials">
+            <h2> What our customers are saying </h2>
+                <p>Check out our Google reviews</p>
+                <a href="https://g.page/r/CXGUi3AWops3EB0/review" class="btn-review">Leave a review</a>
+            </div>
+                <div className="google-photos">
+            <img src={ ReviewOne } alt="google review from a customer"/>
+            <img src={ ReviewTwo } alt="google review from a customer"/>
+            <img src={ ReviewThree } alt="google review from a customer"/>
+            <img src={ ReviewFour } alt="google review from a customer" />
+                </div>
+          </div>
+            <div className="contact-info">
+                <h2>Get in touch with us</h2>
+                <p>3021 Business Ln.</p>
+                <p>Las Vegas, NV 89103</p>
+                <p>Phone Number: (702) 506-5591</p>
+                <p>Email: dnjjewelryco@gmail.com</p>
+            </div>
         </div>
       </>
     )
