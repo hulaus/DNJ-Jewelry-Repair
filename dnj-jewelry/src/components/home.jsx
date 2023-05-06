@@ -3,6 +3,11 @@ import React from "react"
 import Repairs from './assets/videos/Ring.mp4'
 import { Link } from "react-router-dom"
 import JewelrySketch from './assets/images/JewelrySketch.jpeg'
+import ReviewOne from './assets/images/reviewOne.png'
+import ReviewTwo from './assets/images/reviewTwo.png'
+import ReviewThree from './assets/images/reviewThree.png'
+import ReviewFour from './assets/images/reviewFour.png'
+
 
 function Home() {
     return (
@@ -46,6 +51,18 @@ function Home() {
               <span className="custom-button-text">Custom Pieces</span>
             </Link>
           </div>
+          </div>
+          <div className="google-reviews">
+            <div className="testimonials">
+            <h2> Testimonials </h2>
+                <p>See what our customers are saying about us!</p>
+            </div>
+                <div className="google-photos">
+            <img src={ ReviewOne } alt="google review from a customer"/>
+            <img src={ ReviewTwo } alt="google review from a customer"/>
+            <img src={ ReviewThree } alt="google review from a customer"/>
+            <img src={ ReviewFour } alt="google review from a customer" />
+                </div>
           </div>
         </div>
       </>
