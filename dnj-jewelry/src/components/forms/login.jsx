@@ -23,7 +23,7 @@ export const Login = (props) => {
             if (response.data.success) {
                 // Login successful. Render Home
             } else {
-                setMessage('Error Logging In')
+            //    setMessage('Error Logging In')
                 
             }
         })
