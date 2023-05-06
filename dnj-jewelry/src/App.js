@@ -6,12 +6,13 @@ import Aboutus from './components/aboutUs';
 import Custom from './components/custom';
 import Navbar from './components/navbar';
 import ImageGallery from './components/ImageGallery';
-
+// import SocialFollow from './components/SocialFollow'; 
 
 function App() {
   return (
     <>
     <div className="App">
+      <div className='navbar-wrapper'>
       <header>
    <Navbar />
    <BrowserRouter>
@@ -25,6 +26,7 @@ function App() {
    </BrowserRouter>
    </header>
     </div>
+   </div> 
     </>
   );
 }
