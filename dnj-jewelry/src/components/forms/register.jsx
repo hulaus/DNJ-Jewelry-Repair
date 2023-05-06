@@ -1,11 +1,17 @@
-import axios from "axios"
-import { useState } from "react"
+//import axios from "axios"
+//import { useState } from "react"
 
 export const Register = (props) => {
+ //   const saltRounds = 10;
+ //   const  
+ //   const 
 
-    const [email, setEmail ] = useState("")
-    const [password, setPassword ] = useState("")
-
+ //   axios.post('/signup', {
+  //      email: 'email',
+  //      password: hashedPassword
+ //   })
+    
+    
     async function handleSubmit(e) {
         e.preventDefault()
     }
@@ -17,12 +23,12 @@ export const Register = (props) => {
                     <div>
                         <div>
                             <label htmlFor= "email"> Email </label>
-                            <input value={email} onChange={(e) => setEmail(e.target.value)} 
+                            <input value={email} onChange={(e) => seEmail(e.target.value)} 
                             type="email" placeholder="yourock@example.com" id="Email" required />
                         </div>
                         <div>
                             <label htmlFor="password"> Password </label>
-                            <input value={password} onChange={(e) => setPassword(e.target.value)}
+                            <input value={unhashedPassword} onChange={(e) => setPassword(e.target.value)}
                             type="email" placeholder="*******" id="password" required />
                         </div>
                         <div>
