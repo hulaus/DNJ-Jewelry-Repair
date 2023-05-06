@@ -6,6 +6,7 @@ import Aboutus from './components/aboutUs';
 import Custom from './components/custom';
 import Navbar from './components/navbar';
 import ImageGallery from './components/ImageGallery';
+import LoginRegister from './components/loginRegister';
 // import SocialFollow from './components/SocialFollow'; 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route path="ImageGallery" element={<ImageGallery />} />
       <Route path="Aboutus" element={<Aboutus />} />
       <Route path="Custom" element={<Custom />} />
+      <Route path='login' element={<LoginRegister/>} />
     </Routes>
    </BrowserRouter>
    </header>

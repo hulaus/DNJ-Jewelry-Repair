@@ -23,12 +23,12 @@ export const Register = (props) => {
                     <div>
                         <div>
                             <label htmlFor= "email"> Email </label>
-                            <input value={email} onChange={(e) => seEmail(e.target.value)} 
+                            <input /* value={email} onChange={(e) => seEmail(e.target.value)} **/
                             type="email" placeholder="yourock@example.com" id="Email" required />
                         </div>
                         <div>
                             <label htmlFor="password"> Password </label>
-                            <input value={unhashedPassword} onChange={(e) => setPassword(e.target.value)}
+                            <input /* value={unhashedPassword}  onChange={(e) => setPassword(e.target.value)}**/
                             type="email" placeholder="*******" id="password" required />
                         </div>
                         <div>
