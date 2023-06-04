@@ -1,5 +1,4 @@
 import React from "react"
-// import WelcomeBanner from './assets/images/Welcome_Banner.jpg'
 import Repairs from './assets/videos/Ring.mp4'
 import { Link } from "react-router-dom"
 import JewelrySketch from './assets/images/JewelrySketch.jpeg'
