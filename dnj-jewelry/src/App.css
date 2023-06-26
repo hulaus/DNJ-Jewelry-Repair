@@ -4,22 +4,22 @@
 /* This section is for the Navbar component */
 .topnav {
   background-color:blanchedalmond;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   padding: 10px;
   font-weight: 600;
+  width: 100%;
 }
 
+.topnav-links{
+  width: 16%;
+}
 .logo {
   height: 50px;
 }
 
 .topnav a {
-  float: left;
   color: black;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -28,17 +28,297 @@
 .topnav a:hover {
   background-color: burlywood;
   color: whitesmoke;
-}
-/* This section is for the Home Page*/
-.welcomebanner {
-  display: block;
-  margin: 0 auto;
-  max-width: 70rem;
-  min-width: 70%;
-  height: 20rem;
-  padding-top: 2rem;
+  border-radius: 5px;
 }
 
+/* Login/Signup in navbar */
+.hamburger {
+  font-size: 25px;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 21px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamdropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.8rem;
+  right: .5rem;
+  background-color: blanchedalmond; 
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  z-index: 1;
+}
+
+.dropdown a {
+  font-size: 14px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+} 
+
+.dropdown a:hover {
+  color:black;
+  background-color: bisque;
+} 
+
+/* This section is for the Home Page*/
+
+.videocontainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.homepage-video {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.ContentUnderBanner {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+
+.ContentUnderBanner h3{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ContentUnderBanner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.services-container {
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-title h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.services-title p {
+  font-size: 18px;
+  color: #999;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+}
+
+.services-list li {
+  font-size: 24px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.services-list a {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #555;
+  text-decoration: none;
+  border-bottom: 2px solid #555;
+  transition: border-bottom 0.3s ease;
+}
+
+.services-list a:hover {
+  border-bottom: 2px solid #000;
+}
+
+.custom-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.custom-button-header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.custom-button-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
+}
+
+.custom-button {
+  margin-top: 20px;
+}
+
+
+.custom-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button a:hover {
+  transform: translateY(-10px);
+}
+
+.custom-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-button-text {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.google-reviews {
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonials h2{
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.testimonials p {
+  font-size: 18px;
+  color: #999;
+}
+
+
+.btn-review {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-review:hover {
+  background-color: #fff;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.google-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.google-photos img{
+  width: 50%;
+  height: auto;
+  max-width: 400px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .google-photos {
+    flex-direction: column;
+    }
+
+  .google-photos img{
+    max-width: 100%;
+  }
+}
+
+.contact-info {
+  text-align: center;
+  margin: 60px 0;
+  color: #555;
+}
+
+.contact-info h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
 /* This section is for the About us Page */
 .AboutUsLogo img{
   width: 6rem;
@@ -271,47 +551,182 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
 /* Sizing Conventions */
 
-/* Login/Signup in navbar */
-.hamburger {
-  font-size: 25px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .topnav {
+    width: 100%;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.8rem;
+    right: .5rem;
+    background-color: blanchedalmond; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    z-index: 100;
+  }
+  
+  .dropdown a {
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  } 
+  
+  .dropdown a:hover {
+    color:black;
+    background-color: bisque;
+  } 
+  
+
+  .links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links a {
+    padding: .5rem 1rem;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .g-3 {
+    flex-direction: column;
+  }
+
+  .ContactUsContainer {
+    flex-direction: column;
+  }
+
+  .ContactUsForm {
+    width: 100%;
+  }
+
+  .ContactUsInfo {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .aboutUsPic {
+    align-items: center;
+    
+  }
+
+  .ContactUsInfoCustom {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .ContactUsInfoCustom h2 {
+    font-size: medium;
+  }
+
+  .welcomebanner {
+    width: 100%;
+    margin-top: 0;
+    padding-top: .5rem;
+  }
 }
 
-.dropdown {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  
+
+  
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .topnav {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .topnav {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+}
+
+  
+/* This is for the Footer(Social Links)*/
+
+
+.social-footer{
+  margin-top: auto;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
   position: absolute;
-  top: 110px;
-  right: 2%;
-  /* background-color: blanchedalmond; */
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5%;
-  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  background: blanchedalmond;
 }
 
-.dropdown a {
-  font-size: 14px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: black;
-} 
+.SocialHead {
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+}
 
-.dropdown a:hover {
-  color:black;
-  background-color: blanchedalmond;
-} 
+.social-icons{
+  display: flex;
+  align-items: center;
+}
 
-/* This is for the Footer(Social Links)*/
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons a:last-child {
+margin-right: 0;
+}
 
 a.social{
   margin: 0 1rem;
   transition: transform 250ms;
   display: inline-block;
+  font-size: 16px;
 }
 
 a.social:hover{
